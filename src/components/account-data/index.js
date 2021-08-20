@@ -10,7 +10,14 @@ import {
     AccountDataOptions,
     AccountDataOption,
     OptionBackground,
-    OptionTitle
+    OptionTitle,
+    AccountDataCards,
+    AccountDataCardsTitle,
+    AccountDataInfos,
+    AccountDataInfoCard,
+    AccountDataInfoDescription,
+    ColorPurple
+
 } from './style'
 
 export default function AccountData() {
@@ -73,6 +80,18 @@ export default function AccountData() {
 
                 </AccountDataOption>
             </AccountDataOptions>
+
+            <AccountDataCards>
+                <Icon name="credit-card" size={30} />
+                <AccountDataCardsTitle>Meus Cartões</AccountDataCardsTitle>
+            </AccountDataCards>
+
+            <AccountDataInfos>
+                <AccountDataInfoCard>
+                    <AccountDataInfoDescription>Você tem R$ 25.000,00 disponíveis para <ColorPurple>empréstimo.</ColorPurple>
+                    </AccountDataInfoDescription>
+                </AccountDataInfoCard>
+            </AccountDataInfos>
             
         </AccountDataContainer>
         
