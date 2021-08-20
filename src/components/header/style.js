@@ -3,8 +3,7 @@ import styled from "styled-components";
 export const HeaderContainer = styled.View`
     width: 100%;
     height: 150px;
-    padding: 10px;
-    padding-bottom: 20px;
+    padding: 10px 15px;
     justify-content: space-between;
     background-color: #830ad1;
 `;
@@ -27,11 +26,11 @@ export const IconBackgroundColor = styled.View`
 `
 
 export const TopOptions = styled.View`
-    width: 40%;
+    width: 30%;
     height: 100%;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
 `;
 
 export const TitleHello = styled.Text`
