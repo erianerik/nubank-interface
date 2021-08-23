@@ -2,6 +2,8 @@ import styled from "styled-components";
 
 export const AccountDataContainer = styled.View`
     padding: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     border-bottom-color: #f0f1f5;
     border-bottom-width: 2px;
 `;
@@ -74,7 +76,7 @@ export const AccountDataCardsTitle = styled.Text`
 
 export const AccountDataInfos = styled.View`
     width: 90%;
-    height: 80px;
+    height: 100px;
     padding: 10px 20px;
     margin-top: 20px;
     border-radius: 10px;
