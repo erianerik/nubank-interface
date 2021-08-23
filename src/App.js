@@ -6,6 +6,7 @@ import { Container } from './Style';
 import HeaderNu from './components/header';
 import AccountData from './components/account-data';
 import MainService from './components/main-service';
+import FindMore from './components/find';
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
               <HeaderNu />
               <AccountData />
               <MainService />
+              <FindMore />
             </ScrollView>
         </Container>
     </>
