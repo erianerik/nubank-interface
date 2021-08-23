@@ -15,7 +15,7 @@ export const FindMoreContainerCard = styled.View`
 
 export const FindMoreCard = styled.View`
     width: 300px;
-    height: 180px;
+    height: 200px;
     padding: 25px;
     margin-right: 15px;
     border-radius: 10px;
