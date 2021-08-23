@@ -3,52 +3,52 @@ import Icon from 'react-native-vector-icons/MaterialIcons';
 
 import {
     MainServiceContainer,
-    MainServiceCard,
-    MainServiceCardTitle,
-    MainServiceCardMainTitle,
-    MainServiceCardSubtitle,
-    MainServiceCardInvoicePrice,
-    MainServiceCardInvoiceLimit
+    MainServiceSection,
+    MainServiceSectionHeader,
+    MainServiceSectionHeaderTitle,
+    MainServiceSectionSubtitle,
+    MainServiceSectionInvoicePrice,
+    MainServiceSectiondInvoiceLimit
 } from './style';
 
 
 export default function MainService() {
     return (
         <MainServiceContainer>
-            <MainServiceCard>
+            <MainServiceSection>
                 <Icon name="credit-card" size={30}/>
 
-                <MainServiceCardTitle>
-                    <MainServiceCardMainTitle>Cartão de crédito</MainServiceCardMainTitle>
+                <MainServiceSectionHeader>
+                    <MainServiceSectionHeaderTitle>Cartão de crédito</MainServiceSectionHeaderTitle>
                     <Icon name="chevron-right" size={25} color="#706f74"/>
-                </MainServiceCardTitle>
+                </MainServiceSectionHeader>
                 
-                <MainServiceCardSubtitle>Fatura atual</MainServiceCardSubtitle>
-                <MainServiceCardInvoicePrice>R$ 100,00</MainServiceCardInvoicePrice>
-                <MainServiceCardInvoiceLimit>Limite disponível de R$ 2000,00</MainServiceCardInvoiceLimit>
-            </MainServiceCard>
+                <MainServiceSectionSubtitle>Fatura atual</MainServiceSectionSubtitle>
+                <MainServiceSectionInvoicePrice>R$ 100,00</MainServiceSectionInvoicePrice>
+                <MainServiceSectiondInvoiceLimit>Limite disponível de R$ 2000,00</MainServiceSectiondInvoiceLimit>
+            </MainServiceSection>
             
-            <MainServiceCard>
+            <MainServiceSection>
                 <Icon name="account-balance" size={30}/>
 
-                <MainServiceCardTitle>
-                    <MainServiceCardMainTitle>Empréstimo</MainServiceCardMainTitle>
+                <MainServiceSectionHeader>
+                    <MainServiceSectionHeaderTitle>Empréstimo</MainServiceSectionHeaderTitle>
                     <Icon name="chevron-right" size={25} color="#706f74"/>
-                </MainServiceCardTitle>
+                </MainServiceSectionHeader>
                 
-                <MainServiceCardInvoiceLimit>Valor disponível até R$ 25.000,00</MainServiceCardInvoiceLimit>
-            </MainServiceCard>
+                <MainServiceSectiondInvoiceLimit>Valor disponível até R$ 25.000,00</MainServiceSectiondInvoiceLimit>
+            </MainServiceSection>
            
-            <MainServiceCard>
+            <MainServiceSection>
                 <Icon name="favorite" size={30}/>
 
-                <MainServiceCardTitle>
-                    <MainServiceCardMainTitle>Seguro de vida</MainServiceCardMainTitle>
+                <MainServiceSectionHeader>
+                    <MainServiceSectionHeaderTitle>Seguro de vida</MainServiceSectionHeaderTitle>
                     <Icon name="chevron-right" size={25} color="#706f74"/>
-                </MainServiceCardTitle>
+                </MainServiceSectionHeader>
                 
-                <MainServiceCardInvoiceLimit>Conheça Nubank Vida: um seguro simples e que cabe no bolso.</MainServiceCardInvoiceLimit>
-            </MainServiceCard>
+                <MainServiceSectiondInvoiceLimit>Conheça Nubank Vida: um seguro simples e que cabe no bolso.</MainServiceSectiondInvoiceLimit>
+            </MainServiceSection>
         </MainServiceContainer>
     )
 } 
