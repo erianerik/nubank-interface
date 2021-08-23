@@ -38,7 +38,7 @@ export const AccountDataOptions = styled.View`
 
 export const AccountDataOption = styled.View`
     width: 80px;
-    height: 100px;
+    height: 130px;
     margin-right: 15px;
     align-items: center;
 `;
@@ -55,8 +55,10 @@ export const OptionBackground = styled.View`
 export const OptionTitle = styled.Text`
     font-size: 15px;
     font-weight: 600;
+    text-align: center;
+    margin-top: 10px;
+    flex-direction: row;
 `;
-
 
 export const AccountDataCards = styled.View`
     width: 100%;
@@ -75,18 +77,17 @@ export const AccountDataCardsTitle = styled.Text`
 `;
 
 export const AccountDataInfos = styled.View`
-    width: 90%;
-    height: 100px;
-    padding: 10px 20px;
     margin-top: 20px;
-    border-radius: 10px;
-    background-color: #f0f1f5;
-`;
+    `;
 
 export const AccountDataInfoCard = styled.View`
-    width: 84%;
-    height: 100%;
+    width: 310px;
+    height: 100px;
+    padding: 10px 20px;
+    margin-right: 15px;
     justify-content: center;
+    border-radius: 10px;
+    background-color: #f0f1f5;
 `;
 
 export const AccountDataInfoDescription = styled.Text`
@@ -97,6 +98,3 @@ export const AccountDataInfoDescription = styled.Text`
 export const ColorPurple = styled.Text`
     color: #ae7acb;
 `;
-
-
-

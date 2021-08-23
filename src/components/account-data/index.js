@@ -1,4 +1,5 @@
 import React from 'react';
+import { ScrollView } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
 import {
@@ -33,52 +34,73 @@ export default function AccountData() {
 
             </AccountDataHeader>
         
-
             <AccountDataOptions>
-                <AccountDataOption>
-                    <OptionBackground>
-                        <Icon  name="api" size={30}/>
-                    </OptionBackground>
+                <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
 
-                    <OptionTitle>Área Pix</OptionTitle>
+                    <AccountDataOption>
+                        <OptionBackground>
+                            <Icon  name="api" size={30}/>
+                        </OptionBackground>
+                        <OptionTitle>Área Pix</OptionTitle>
 
-                </AccountDataOption>
-               
-                <AccountDataOption>
-                    <OptionBackground>
-                        <Icon  name="view-week" size={30}/>
-                    </OptionBackground>
+                    </AccountDataOption>
+                
+                    <AccountDataOption>
+                        <OptionBackground>
+                            <Icon  name="view-week" size={30}/>
+                        </OptionBackground>
 
-                    <OptionTitle>Pagar</OptionTitle>
+                        <OptionTitle>Pagar</OptionTitle>
+                    </AccountDataOption>
+                
+                    <AccountDataOption>
+                        <OptionBackground>
+                            <Icon  name="read-more" size={30}/>
+                        </OptionBackground>
 
-                </AccountDataOption>
-             
-                <AccountDataOption>
-                    <OptionBackground>
-                        <Icon  name="read-more" size={30}/>
-                    </OptionBackground>
+                        <OptionTitle>Transferir</OptionTitle>
+                    </AccountDataOption>
 
-                    <OptionTitle>Transferir</OptionTitle>
+                    <AccountDataOption>
+                        <OptionBackground>
+                            <Icon  name="payments" size={30}/>
+                        </OptionBackground>
 
-                </AccountDataOption>
+                        <OptionTitle>Depositar</OptionTitle>
+                    </AccountDataOption>
 
-                <AccountDataOption>
-                    <OptionBackground>
-                        <Icon  name="payments" size={30}/>
-                    </OptionBackground>
+                    <AccountDataOption>
+                        <OptionBackground>
+                            <Icon  name="account-balance" size={30}/>
+                        </OptionBackground>
 
-                    <OptionTitle>Depositar</OptionTitle>
+                        <OptionTitle>Pegar emprestado</OptionTitle>
+                    </AccountDataOption>
+                    
+                    <AccountDataOption>
+                        <OptionBackground>
+                            <Icon  name="smartphone" size={30}/>
+                        </OptionBackground>
 
-                </AccountDataOption>
+                        <OptionTitle>Recarga de celular</OptionTitle>
+                    </AccountDataOption>
+                    
+                    <AccountDataOption>
+                        <OptionBackground>
+                            <Icon  name="chat-bubble" size={30}/>
+                        </OptionBackground>
 
-                <AccountDataOption>
-                    <OptionBackground>
-                        <Icon  name="payments" size={30}/>
-                    </OptionBackground>
+                        <OptionTitle>Cobrar</OptionTitle>
+                    </AccountDataOption>
+                  
+                    <AccountDataOption>
+                        <OptionBackground>
+                            <Icon  name="favorite" size={30}/>
+                        </OptionBackground>
 
-                    <OptionTitle>Depositar</OptionTitle>
-
-                </AccountDataOption>
+                        <OptionTitle>Doação</OptionTitle>
+                    </AccountDataOption>
+                </ScrollView>
             </AccountDataOptions>
 
             <AccountDataCards>
@@ -87,13 +109,21 @@ export default function AccountData() {
             </AccountDataCards>
 
             <AccountDataInfos>
-                <AccountDataInfoCard>
-                    <AccountDataInfoDescription>Você tem R$ 25.000,00 disponíveis para <ColorPurple>empréstimo.</ColorPurple>
-                    </AccountDataInfoDescription>
-                </AccountDataInfoCard>
+
+                <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
+                    <AccountDataInfoCard>
+                        <AccountDataInfoDescription>Você tem R$ 25.000,00 disponíveis para <ColorPurple>empréstimo.</ColorPurple>
+                        </AccountDataInfoDescription>
+                    </AccountDataInfoCard>
+                  
+                    <AccountDataInfoCard>
+                        <AccountDataInfoDescription>Salve seus amigos da burocracia. <ColorPurple>faça um convite para o Nubank.</ColorPurple>
+                        </AccountDataInfoDescription>
+                    </AccountDataInfoCard>
+                </ScrollView>
+
             </AccountDataInfos>
             
         </AccountDataContainer>
-        
     )
 }

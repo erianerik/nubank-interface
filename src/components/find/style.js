@@ -10,17 +10,17 @@ export const FindMoreContainerTitle = styled.Text`
 `;
 
 export const FindMoreContainerCard = styled.View`
-    width: 83%;
     margin-top: 30px;
-    border-radius: 10px;
-    background-color: #f0f1f5;
     `;
 
 export const FindMoreCard = styled.View`
-    width: 100%;
+    width: 300px;
     height: 180px;
+    padding: 25px;
+    margin-right: 15px;
+    border-radius: 10px;
     justify-content: space-between;
-    padding: 20px;
+    background-color: #f0f1f5;
 `;
 
 export const FindMoreCardInfoContainer = styled.View`
